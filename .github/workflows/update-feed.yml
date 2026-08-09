@@ -1,0 +1,95 @@
+name: Update Free VPN Feed
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download sources
+        shell: bash
+        run: |
+          set -e
+
+          curl -L --fail --retry 3 \
+            -A "LightVPN-Feed/1.0" \
+            "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/data/light/configs.txt" \
+            -o source1.txt
+
+          curl -L --fail --retry 3 \
+            -A "LightVPN-Feed/1.0" \
+            "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub" \
+            -o source2.txt
+
+      - name: Build subscription
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64
+          import re
+
+          files = ["source1.txt", "source2.txt"]
+          servers = []
+
+          for filename in files:
+              raw = open(filename, "r", encoding="utf-8", errors="ignore").read().strip()
+
+              if not raw:
+                  continue
+
+              # Plain text feed
+              if re.search(r'(?m)^(vless|vmess|trojan)://', raw):
+                  text = raw
+              else:
+                  # Try Base64
+                  try:
+                      normalized = re.sub(r'\s+', '', raw)
+                      normalized += '=' * (-len(normalized) % 4)
+                      text = base64.b64decode(normalized).decode(
+                          "utf-8", errors="ignore"
+                      )
+                  except Exception:
+                      text = ""
+
+              for line in text.splitlines():
+                  line = line.strip()
+
+                  if line.startswith(("vless://", "vmess://", "trojan://")):
+                      servers.append(line)
+
+          unique = list(dict.fromkeys(servers))
+
+          if not unique:
+              raise SystemExit("No valid VPN servers found.")
+
+          with open("sub", "w", encoding="utf-8") as f:
+              f.write("\n".join(unique) + "\n")
+
+          print(f"Collected {len(unique)} unique servers.")
+          PY
+
+      - name: Commit updated feed
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add sub
+
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+
+          git commit -m "Update free VPN feed"
+          git push
