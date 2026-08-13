@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "servers": [
+    {
+      "id": "sg-01",
+      "country": "Singapore",
+      "flag": "🇸🇬",
+      "link": "vless://c1fda654-a40e-4023-a325-1f7e4ce95d63@66.42.49.2:443?encryption=none&fp=chrome&pbk=j-BuCAuVY2BVx9Fx8OcUw0YszmUUq3YhITPGP_AfAXk&security=reality&sid=49ed2370&sni=yp.amazon.com&spx=%2F1cdbed3d2a616b9&type=tcp#LightVPN-Reality-premium-1"
+    }
+  ]
+}
