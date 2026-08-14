@@ -7,7 +7,7 @@
       "country": "Singapore",
       "city": "Singapore",
       "flag": "🇸🇬",
-      "link": "vless://SINGAPORE-LINK"
+      "link": "vless://c1fda654-a40e-4023-a325-1f7e4ce95d63@66.42.49.2:443?encryption=none&fp=chrome&pbk=j-BuCAuVY2BVx9Fx8OcUw0YszmUUq3YhITPGP_AfAXk&security=reality&sid=49ed2370&sni=yp.amazon.com&spx=%2F1cdbed3d2a616b9&type=tcp#LightVPN-Reality-premium-1"
     },
     {
       "id": "jp-01",
@@ -15,7 +15,7 @@
       "country": "Japan",
       "city": "Tokyo",
       "flag": "🇯🇵",
-      "link": "vless://JAPAN-LINK"
+      "link": "vless://e73bbf14-4eb5-4fef-a351-7bb04a922ebc@18.179.198.108:443?encryption=none&fp=chrome&pbk=Nebti9JVCVMWmQfjWXEYBG1jK9JraKITyJWsvpRJTDI&security=reality&sid=c4&sni=www.amazon.com&spx=%2F0f74a024aca1da7&type=tcp#Japan%20Premium-premium-1"
     }
   ]
 }
