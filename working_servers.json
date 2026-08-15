@@ -1,85 +1,121 @@
 {
-  "updated_at": "2026-08-15T14:13:55Z",
+  "updated_at": "2026-08-15T15:13:28Z",
   "tested": 80,
-  "working": 13,
-  "failed": 67,
+  "working": 19,
+  "failed": 61,
   "servers": [
     {
-      "protocol": "VLESS",
-      "url": "vless://6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2@91.193.58.45:2096?security=tls&type=ws&path=/free-server.techsonic.dev&host=free-server.techsonic.dev&packetEncoding=xudp&sni=free-server.techsonic.dev&fp=chrome#%E4%BF%84%E7%BD%97%E6%96%AF+V2CROSS.COM",
-      "latency_ms": 158.7,
+      "protocol": "TROJAN",
+      "url": "trojan://FH72359861@massive-terrapin.rooster465.autos:443?sni=massive-terrapin.rooster465.autos&type=tcp&fp=chrome#SG 🇸🇬 | @Raydikalx | 213013",
+      "latency_ms": 78.3,
       "quality": "excellent"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://AE62539071@13.113.89.229:443?sni=coherent-newt.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#JP 🇯🇵 | @Raydikalx | 07FCF8",
-      "latency_ms": 338.3,
+      "url": "trojan://ND91608427@3.112.15.214:443?sni=adjusted-labrador.rooster465.autos&type=tcp&fp=chrome#JP 🇯🇵 | @Raydikalx | B1E6F4",
+      "latency_ms": 337.6,
       "quality": "good"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://6ec301428255a78a1d826988d86cc87e@2c.fast9988.com:50887?allowInsecure=0&security=tls&sni=www.nintendogames.net#%E6%B3%A2%E5%85%B0+V2CROSS.COM",
-      "latency_ms": 467.1,
+      "url": "trojan://AE62539071@on-roughy.rooster465.autos:443?sni=on-roughy.rooster465.autos&allowInsecure=1&type=tcp#JP 🇯🇵 | @Raydikalx | 196DB0",
+      "latency_ms": 342.6,
       "quality": "good"
     },
     {
-      "protocol": "VMESS",
-      "url": "vmess://eyJ2IjoiMiIsInBzIjoiVVMg8J+HuvCfh7ggfCBAUmF5ZGlrYWx4IHwgMzkyNjIzIiwiYWRkIjoiODIuMTk4LjI0Ni4yNTAiLCJwb3J0IjoxODAsImlkIjoiZDEzZmMyZjUtM2UwNS00Nzk1LTgxZWItNDQxNDNhMDllNTUyIiwiYWlkIjowLCJzY3kiOiJhdXRvIiwibmV0IjoidGNwIiwidHlwZSI6Im5vbmUiLCJob3N0IjoiIiwicGF0aCI6IiIsInRscyI6IiIsInNuaSI6InNuaS4xMTEwMDAuZHludjYubmV0IiwiYWxwbiI6IiIsImZwIjoiIn0=",
-      "latency_ms": 554.0,
+      "protocol": "TROJAN",
+      "url": "trojan://FH72359861@set-gazelle.rooster465.autos:443?sni=set-gazelle.rooster465.autos&type=tcp&fp=chrome#JP 🇯🇵 | @Raydikalx | F7752D",
+      "latency_ms": 342.7,
+      "quality": "good"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://AE62539071@well-jennet.rooster465.autos:443?sni=well-jennet.rooster465.autos&allowInsecure=1&type=tcp#JP 🇯🇵 | @Raydikalx | 82B33F",
+      "latency_ms": 351.4,
+      "quality": "good"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://6ec301428255a78a1d826988d86cc87e@2c.fast9988.com:50887?allowInsecure=0&security=tls&sni=www.nintendogames.net#%E9%A6%99%E6%B8%AF+Amazon%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83",
+      "latency_ms": 567.1,
       "quality": "usable"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://FH72359861@15.237.214.103:443?sni=tough-hermit.rooster465.autos&type=tcp&fp=chrome#FR 🇫🇷 | @Raydikalx | 9825C1",
-      "latency_ms": 695.4,
-      "quality": "usable"
-    },
-    {
-      "protocol": "VMESS",
-      "url": "vmess://eyJhZGQiOiIxNzMuMjQ5LjIwOS4xNDYiLCJhaWQiOjAsImlkIjoiMzkzNWMyZGMtZGJiMC00M2Y3LWIzNjctZmU4OWFiZTg3ZmRmIiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOjIwMDg2LCJzY3kiOiJhdXRvIiwidHlwZSI6ImF1dG8iLCJ2IjoiMiIsInBzIjoiVVMg8J+HuvCfh7ggfCBAUmF5ZGlrYWx4IHwgREE3NDlGIn0=",
-      "latency_ms": 785.7,
-      "quality": "usable"
-    },
-    {
-      "protocol": "VMESS",
-      "url": "vmess://eyJhZGQiOiJ6dWRzc2d0bXJxZzlscHZpLnYuM2Rucy52aXAiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InpVRHNzZ1RNUnFnOUxwdkkudi4zZG5zLnZpcCIsImlkIjoiZjIzYmI0MjdjMWY5NDM3Mzg3NmMyZjQzZTlmNzkwZjMiLCJuZXQiOiJ3cyIsInBhdGgiOiIvd3Mtdm1lc3MiLCJwY24iOiIiLCJwY3MiOiIiLCJwb3J0IjoiNDQzIiwicHMiOiJISyDwn4et8J+HsCB8IEBSYXlkaWthbHggfCBGNDM4REEiLCJzY3kiOiJhdXRvIiwic25pIjoielVEc3NnVE1ScWc5THB2SS52LjNkbnMudmlwIiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOiIyIn0=",
-      "latency_ms": 930.1,
+      "url": "trojan://AE62539071@distinct-quail.rooster465.autos:443?sni=distinct-quail.rooster465.autos&allowInsecure=1&type=tcp#FR 🇫🇷 | @Raydikalx | 1C880C",
+      "latency_ms": 665.7,
       "quality": "usable"
     },
     {
       "protocol": "VLESS",
-      "url": "vless://c7e9c591-2764-423a-afca-efbd010fd396@185.109.48.13:2053?security=tls&type=ws&path=/&host=forfreeuse.rtqa.ru&packetEncoding=xudp&sni=forfreeuse.rtqa.ru&fp=chrome&encryption=none#%E8%8B%B1%E5%9B%BD+V2CROSS.COM",
-      "latency_ms": 1129.4,
+      "url": "vless://0c4f46c2-afb7-4a80-8f6e-10258d80333e@85.92.111.38:4100?encryption=none&path=/v1&security=none&type=ws#RU 🇷🇺 | @Raydikalx | 122CC0",
+      "latency_ms": 793.1,
+      "quality": "usable"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://ND91608427@fleet-bonefish.rooster465.autos:443?security=tls&sni=fleet-bonefish.rooster465.autos&path=/#US 🇺🇸 | @Raydikalx | DEF18C",
+      "latency_ms": 832.1,
+      "quality": "usable"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://humanity@104.26.14.137:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 931.9,
+      "quality": "usable"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://humanity@198.41.223.96:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 1034.7,
+      "quality": "slow"
+    },
+    {
+      "protocol": "VLESS",
+      "url": "vless://18535741-e8b3-4b43-9348-785b55936751@ov-germany1.09vpn.com:80?security=none&type=ws&path=/vless/&host=ov-germany1.09vpn.com&sni=ov-germany1.09vpn.com#DE 🇩🇪 | @Raydikalx | 7F4486",
+      "latency_ms": 1035.0,
+      "quality": "slow"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://AE62539071@helped-haddock.rooster465.autos:443?sni=helped-haddock.rooster465.autos&allowInsecure=1&type=tcp#IE 🇮🇪 | @Raydikalx | 59DB08",
+      "latency_ms": 1058.1,
+      "quality": "slow"
+    },
+    {
+      "protocol": "VMESS",
+      "url": "vmess://eyJ2IjoiMiIsInBzIjoiSEsg8J+HrfCfh7AgfCBAUmF5ZGlrYWx4IHwgMzBEMERGIiwiYWRkIjoienVkc3NndG1ycWc5bHB2aS52LjNkbnMudmlwIiwicG9ydCI6NDQzLCJpZCI6ImYyM2JiNDI3YzFmOTQzNzM4NzZjMmY0M2U5Zjc5MGYzIiwiYWlkIjowLCJzY3kiOiJhdXRvIiwibmV0Ijoid3MiLCJ0eXBlIjoibm9uZSIsInBhdGgiOiIvd3Mtdm1lc3MiLCJ0bHMiOiJ0bHMifQ==",
+      "latency_ms": 1223.1,
       "quality": "slow"
     },
     {
       "protocol": "VLESS",
       "url": "vless://86c50e3a-5b87-49dd-bd20-03c7f2735e40@172.67.202.17:2095?path=/&encryption=none&host=fuckfangbinxing.pusytroller.gq&type=ws#CA 🇨🇦 | @Raydikalx | DE3086",
-      "latency_ms": 1271.2,
+      "latency_ms": 1246.7,
       "quality": "slow"
     },
     {
-      "protocol": "TROJAN",
-      "url": "trojan://humanity@104.26.14.137:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 1655.5,
+      "protocol": "VMESS",
+      "url": "vmess://eyJhZGQiOiJ6dWRzc2d0bXJxZzlscHZpLnYuM2Rucy52aXAiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InpVRHNzZ1RNUnFnOUxwdkkudi4zZG5zLnZpcCIsImlkIjoiZjIzYmI0MjdjMWY5NDM3Mzg3NmMyZjQzZTlmNzkwZjMiLCJuZXQiOiJ3cyIsInBhdGgiOiIvd3Mtdm1lc3MiLCJwY24iOiIiLCJwY3MiOiIiLCJwb3J0IjoiNDQzIiwicHMiOiJISyDwn4et8J+HsCB8IEBSYXlkaWthbHggfCBGNDM4REEiLCJzY3kiOiJhdXRvIiwic25pIjoielVEc3NnVE1ScWc5THB2SS52LjNkbnMudmlwIiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOiIyIn0=",
+      "latency_ms": 1552.8,
       "quality": "very_slow"
     },
     {
       "protocol": "VLESS",
-      "url": "vless://50414e45-4c5f-5a45-5553-5d36fccf19c3@172.64.93.246:443?path=%2Fstream%2FPANEL_ZEUS%2F5d36fccf19c3&security=tls&encryption=none&insecure=0&host=zeus-panel-24zdq8.bikhabi.workers.dev&fp=ios&type=ws&allowInsecure=0&sni=zeus-panel-24zdq8.bikhabi.workers.dev#CA 🇨🇦 | @Raydikalx | 94DF44",
-      "latency_ms": 1681.3,
+      "url": "vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@103.161.237.54:443?security=tls&type=ws&path=/api/v1/irc&host=vod.ensf.top&packetEncoding=xudp&alpn=http/1.1&sni=vod.ensf.top&fp=chrome&encryption=none#%E4%BA%9A%E5%A4%AA%E5%9C%B0%E5%8C%BA+V2CROSS.COM",
+      "latency_ms": 2380.9,
       "quality": "very_slow"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@2.144.21.112:40443?security=tls&sni=www.ignitelimit.com&type=ws&path=%2Fassignment&Host=www.ignitelimit.com#%E4%BC%8A%E6%9C%97+V2CROSS.COM",
-      "latency_ms": 3852.3,
+      "url": "trojan://AE62539071@up-dinosaur.rooster465.autos:443?#DE 🇩🇪 | @Raydikalx | BAF851",
+      "latency_ms": 2477.0,
       "quality": "very_slow"
     },
     {
       "protocol": "VMESS",
       "url": "vmess://eyJhZGQiOiJ6dWRzc2d0bXJxZzlscHZpLnYuM2Rucy52aXAiLCJhaWQiOiIwIiwiaG9zdCI6InpVRHNzZ1RNUnFnOUxwdkkudi4zZG5zLnZpcCIsImlkIjoiZjIzYmI0MjdjMWY5NDM3Mzg3NmMyZjQzZTlmNzkwZjMiLCJuZXQiOiJ3cyIsInBhdGgiOiIvd3Mtdm1lc3MiLCJwb3J0IjoiNDQzIiwicHMiOiJISyDwn4et8J+HsCB8IEBSYXlkaWthbHggfCBDMDM5NEEiLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=",
-      "latency_ms": 12952.9,
+      "latency_ms": 4487.6,
       "quality": "very_slow"
     }
   ]
