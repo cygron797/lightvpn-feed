@@ -1,103 +1,79 @@
 {
-  "updated_at": "2026-08-22T17:13:32Z",
+  "updated_at": "2026-08-22T18:14:12Z",
   "tested": 80,
-  "working": 16,
-  "failed": 64,
+  "working": 12,
+  "failed": 68,
   "servers": [
     {
-      "protocol": "VLESS",
-      "url": "vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@159.112.235.52:443?path=/?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=tls&encryption=none&insecure=0&host=josni.hoyes.cloudns.ch&ech=ip.gs+udp://8.8.8.8&type=ws&allowInsecure=0&sni=josni.hoyes.cloudns.ch#US 🇺🇸 | @Raydikalx | C52CE9",
-      "latency_ms": 106.1,
-      "quality": "excellent"
-    },
-    {
       "protocol": "TROJAN",
-      "url": "trojan://AE62539071@strong-haddock.rooster465.autos:443?security=tls&path=/#HK 🇭🇰 | @Raydikalx | BD43E7",
-      "latency_ms": 216.5,
-      "quality": "good"
-    },
-    {
-      "protocol": "TROJAN",
-      "url": "trojan://EQ30679154@full-ox.rooster465.autos:443?sni=full-ox.rooster465.autos&type=tcp&path=/#HK 🇭🇰 | @Raydikalx | D08504",
-      "latency_ms": 217.8,
-      "quality": "good"
-    },
-    {
-      "protocol": "TROJAN",
-      "url": "trojan://8ccc5a61-b4f5-4fe4-a394-65890d8f044b@space.byu.id.yxls.eu.cc:443?allowInsecure=1&host=space.byu.id.yxls.eu.cc&path=/sg-orcl&type=ws#CA 🇨🇦 | @Raydikalx | 7FCD6C",
-      "latency_ms": 404.3,
-      "quality": "good"
-    },
-    {
-      "protocol": "TROJAN",
-      "url": "trojan://AE62539071@193.169.239.160:443?security=tls&sni=thorough-falcon.rooster465.autos&fp=chrome&type=tcp&headerType=none&path=/#NL 🇳🇱 | @Raydikalx | 5E4042",
-      "latency_ms": 697.5,
-      "quality": "usable"
-    },
-    {
-      "protocol": "TROJAN",
-      "url": "trojan://humanity@8.6.112.0:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&host=www.ignitelimit.com&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+%E5%BE%97%E5%85%8B%E8%90%A8%E6%96%AF%E5%B7%9E%E8%BE%BE%E6%8B%89%E6%96%AFCloudflare+Warp%E8%8A%82%E7%82%B9",
-      "latency_ms": 764.6,
-      "quality": "usable"
-    },
-    {
-      "protocol": "TROJAN",
-      "url": "trojan://humanity@198.41.223.96:443?security=tls&sni=www.ignitelimit.com&alpn=http%2F1.1%2Ch2%2Ch3&insecure=0&allowInsecure=0&type=ws&host=www.ignitelimit.com&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 893.2,
+      "url": "trojan://EQ30679154@sharing-chipmunk.rooster465.autos:443?sni=sharing-chipmunk.rooster465.autos&type=tcp&path=/#AU 🇦🇺 | @Raydikalx | 6AD3EA",
+      "latency_ms": 530.8,
       "quality": "usable"
     },
     {
       "protocol": "TROJAN",
       "url": "trojan://humanity@216.24.57.7:443?security=tls&sni=www.ignitelimit.com&type=ws&path=%2Fassignment&Host=www.ignitelimit.com#%E7%BE%8E%E5%9B%BD+%E5%8A%A0%E5%B7%9E",
-      "latency_ms": 975.5,
+      "latency_ms": 717.4,
       "quality": "usable"
     },
     {
       "protocol": "TROJAN",
+      "url": "trojan://humanity@join-telegram-channel.tirexnet.kdns.fr:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&host=www.ignitelimit.com&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 759.4,
+      "quality": "usable"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://humanity@www.speedtest.org:443?security=tls&sni=www.ignitelimit.com&type=ws&path=%2Fassignment&Host=www.ignitelimit.com#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 976.5,
+      "quality": "usable"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://humanity@172.67.74.2:443?security=tls&sni=www.ignitelimit.com&type=ws&path=%2Fassignment&Host=www.ignitelimit.com#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 1001.7,
+      "quality": "slow"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://humanity@86.38.214.205:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&host=www.ignitelimit.com&path=%2Fassignment#%E7%AB%8B%E9%99%B6%E5%AE%9B+V2CROSS.COM",
+      "latency_ms": 1040.8,
+      "quality": "slow"
+    },
+    {
+      "protocol": "VLESS",
+      "url": "vless://e7961655-9674-4cbd-a36f-ec0d5d7d660c@45.130.125.158:2053?encryption=none&host=po.fastbrokencompony.com&path=/&security=tls&sni=po.fastbrokencompony.com&type=ws#SC 🇸🇨 | @Raydikalx | BAC482",
+      "latency_ms": 1133.1,
+      "quality": "slow"
+    },
+    {
+      "protocol": "VLESS",
+      "url": "vless://86c50e3a-5b87-49dd-bd20-03c7f2735e40@188.114.97.6:2095?security=none&type=ws&path=/&host=fuckingfangbinxing.pusytroller.cf&packetEncoding=xudp&sni=cf.levikogjgfdd.io#%E5%B7%B4%E8%A5%BF%E5%9C%A3%E4%BF%9D%E7%BD%97+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 1257.8,
+      "quality": "slow"
+    },
+    {
+      "protocol": "TROJAN",
       "url": "trojan://MiTiVPN@140.248.185.253:443?path=/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-w@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN&security=tls&alpn=http/1.1&insecure=0&host=4x-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=0&sni=ssl.fastly.com#%E7%BE%8E%E5%9B%BD+V2CROSS.COM",
-      "latency_ms": 1064.9,
+      "latency_ms": 1314.1,
       "quality": "slow"
     },
     {
-      "protocol": "VMESS",
-      "url": "vmess://eyJ2IjoiMiIsImFkZCI6IjE3Mi4xMTEuMTQ2LjY0IiwicG9ydCI6IjgwIiwiaWQiOiIwNWI4Yzc4My03ZjU5LTQ3ZjktOTkyMy0wNmE0NjU2NzlmNmEiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6IndzIiwidHlwZSI6IiIsInRscyI6IiIsInBhdGgiOiIvdm1lc3MvIiwicHMiOiJKUCDwn4ev8J+HtSB8IEBSYXlkaWthbHggfCA3QjRFRDgiLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlfQ==",
-      "latency_ms": 1371.3,
-      "quality": "slow"
-    },
-    {
-      "protocol": "VLESS",
-      "url": "vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@134.98.158.147:62145?encryption=none&security=none&type=tcp&headerType=none#NL 🇳🇱 | @Raydikalx | 5BD366",
-      "latency_ms": 1529.3,
+      "protocol": "TROJAN",
+      "url": "trojan://AE62539071@89.39.70.9:443?fp=chrome&sni=whole-woodcock.rooster465.autos#NL 🇳🇱 | @Raydikalx | CE2D09",
+      "latency_ms": 2757.1,
       "quality": "very_slow"
     },
     {
       "protocol": "VLESS",
-      "url": "vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@208.103.161.32:443?security=tls&type=ws&path=/sg-melbi_/@sil3nt_network&host=josni.hoyes.cloudns.ch&packetEncoding=xudp&sni=josni.hoyes.cloudns.ch&fp=chrome#%E7%BE%8E%E5%9B%BD+V2CROSS.COM",
-      "latency_ms": 1649.9,
+      "url": "vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@157.137.222.244:62145?encryption=none&security=none&type=tcp&headerType=none#CO 🇨🇴 | @Raydikalx | FC3DAB",
+      "latency_ms": 6917.3,
       "quality": "very_slow"
     },
     {
       "protocol": "VLESS",
-      "url": "vless://8c8fd0d7-6d35-0948-598d-7f998cc0eb6f@69.46.46.39:443?path=/ws/8c8fd0d7-6d35-0948-598d-7f998cc0eb6f&security=tls&alpn=http/1.1&encryption=none&insecure=0&host=askan-production.up.railway.app&fp=ios&type=ws&allowInsecure=0&sni=askan-production.up.railway.app#US 🇺🇸 | @Raydikalx | 69551F",
-      "latency_ms": 2592.6,
-      "quality": "very_slow"
-    },
-    {
-      "protocol": "VLESS",
-      "url": "vless://8fb65472-5957-4f64-ba2d-b5812b2f155a@157.137.210.242:62145?encryption=none&security=none&type=tcp&headerType=none#CO 🇨🇴 | @Raydikalx | 77452F",
-      "latency_ms": 3969.0,
-      "quality": "very_slow"
-    },
-    {
-      "protocol": "VLESS",
-      "url": "vless://c7e9c591-2764-423a-afca-efbd010fd396@217.60.63.206:2053?security=tls&type=ws&path=/&host=forfreeuse.rtqa.ru&packetEncoding=xudp&sni=forfreeuse.rtqa.ru&fp=chrome#%E4%BC%8A%E6%9C%97+V2CROSS.COM",
-      "latency_ms": 5762.8,
-      "quality": "very_slow"
-    },
-    {
-      "protocol": "VLESS",
-      "url": "vless://8975546a-375c-4966-8064-19fc0f66f30a@31.76.80.69:2083?mode=auto&path=%2F&security=reality&encryption=none&pbk=zq3gOJkXi6laNuxMohL3lr-wFOKi4Z9oG7QuMMiTDAk&fp=chrome&spx=%2Fy52f8gp4rv1il6u&type=xhttp&sni=www.amd.com&sid=29b21343ab4d#FI 🇫🇮 | @Raydikalx | C69A07",
-      "latency_ms": 6155.8,
+      "url": "vless://caec0d8d-ab2f-4247-b97d-7fb1a34ab195@180.178.60.254:10000?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&security=none&encryption=none&headerType=none&type=tcp#%E9%A6%99%E6%B8%AF+Simcentric%E7%BD%91%E7%BB%9C%E5%85%AC%E5%8F%B8",
+      "latency_ms": 7297.1,
       "quality": "very_slow"
     }
   ]
