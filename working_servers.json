@@ -1,121 +1,127 @@
 {
-  "updated_at": "2026-08-24T03:14:33Z",
+  "updated_at": "2026-08-24T04:14:32Z",
   "tested": 80,
-  "working": 19,
-  "failed": 61,
+  "working": 20,
+  "failed": 60,
   "servers": [
     {
       "protocol": "VLESS",
-      "url": "vless://9bf81377-d077-4569-9fc9-5f0a55180651@deepl.com:8880?security=none&type=ws&path=/pyip=ProxyIP.JP.CMLiussss.net&host=super-feather-91c4.267.workers.dev&packetEncoding=xudp#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 48.3,
+      "url": "vless://94ed4a58-dcf4-43cb-afc1-f158e14ec42d@104.27.82.154:8880?encryption=none&host=gentle-surf-cc74.345-604.workers.dev&path=/pyip=ProxyIP.SG.CMLiussss.net&security=none&type=ws#CA 🇨🇦 | @Raydikalx | C2C6CF",
+      "latency_ms": 59.4,
       "quality": "excellent"
     },
     {
       "protocol": "VLESS",
-      "url": "vless://9bf81377-d077-4569-9fc9-5f0a55180651@172.64.151.134:8880?security=none&type=ws&path=/pyip=ProxyIP.JP.CMLiussss.net&host=super-feather-91c4.267.workers.dev&packetEncoding=xudp&encryption=none#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 56.5,
+      "url": "vless://ba746959-18e7-471c-b00f-fa5cdd930abf@skk.moe:8880/?type=ws&encryption=none&flow=&host=crimson-bread-c38e.295.workers.dev&path=/pyip=ProxyIP.JP.CMLiussss.net#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 63.5,
       "quality": "excellent"
     },
     {
       "protocol": "VLESS",
-      "url": "vless://902fd911-ca5d-49a6-99ad-47372a266804@104.21.15.212:8880?encryption=none&host=young-wildflower-6b6c.100-52d.workers.dev&path=/pyip=ProxyIP.JP.CMLiussss.net&security=none&type=ws#CA 🇨🇦 | @Raydikalx | F0CDE2",
-      "latency_ms": 58.5,
-      "quality": "excellent"
-    },
-    {
-      "protocol": "VLESS",
-      "url": "vless://923e051a-f598-4ea5-9c6c-f7e37c438a60@vkvd8bpskvxgjwdvcidxgoccr.javanbaghe.workers.dev:80?path=/vl/D2pryqVs9LAgCYdTK76lsafWY?ed=2560&encryption=none&host=vkvd8bpskvxgjwdvcidxgoccr.javanbaghe.workers.dev&type=ws#CA 🇨🇦 | @Raydikalx | 3B571F",
-      "latency_ms": 63.3,
-      "quality": "excellent"
-    },
-    {
-      "protocol": "VLESS",
-      "url": "vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@185.193.30.94:443?ed=512&eh=Sec-WebSocket-Protocol&encryption=none&fp=chrome&host=josni.hoyes.cloudns.ch&path=/musiclovers85&security=tls&sni=josni.hoyes.cloudns.ch&type=ws#FR 🇫🇷 | @Raydikalx | 4D4C12",
-      "latency_ms": 105.7,
+      "url": "vless://92a4cb10-228f-4239-8c63-c566b20a9167@104.16.100.66:8880?encryption=none&host=square-waterfall-c1de.199-82d.workers.dev&path=/pyip=ProxyIP.KR.CMLiussss.net&security=none&type=ws#CA 🇨🇦 | @Raydikalx | 38EBF8",
+      "latency_ms": 69.1,
       "quality": "excellent"
     },
     {
       "protocol": "VLESS",
       "url": "vless://1078d418-b4e0-4668-9018-dc90c2042d61@162.251.82.131:443?security=tls&type=ws&path=/fp&host=workspace.evan00.dpdns.org&packetEncoding=xudp&sni=workspace.evan00.dpdns.org&fp=chrome&encryption=none#%E7%BE%8E%E5%9B%BD+V2CROSS.COM",
-      "latency_ms": 114.7,
+      "latency_ms": 100.1,
       "quality": "excellent"
     },
     {
       "protocol": "VLESS",
-      "url": "vless://8ddedcc7-6c4e-4df3-a190-ac40926f6694@cf.levikogjgfdd.ir:8880?path=/pyip&encryption=none&host=late-boat-fbd7.152-de6.workers.dev&type=ws#CA 🇨🇦 | @Raydikalx | B58C95",
-      "latency_ms": 306.4,
-      "quality": "good"
+      "url": "vless://934f2038-17f8-4ec5-9204-8381e19fc6e3@188.114.97.6:2053?ed=2560&eh=Sec-WebSocket-Protocol&encryption=none&host=TIGHT-busH-0Bb4.BSHXYyXhDJdGGb.wOrkERS.DEV&path=/eyJqdW5rIjoiVXFEMlhKZVY4dzNoTUtpZCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=&security=tls&sni=TIGHT-busH-0Bb4.BSHXYyXhDJdGGb.wOrkERS.DEV&type=ws#CA 🇨🇦 | @Raydikalx | 3BCAAD",
+      "latency_ms": 114.2,
+      "quality": "excellent"
     },
     {
-      "protocol": "TROJAN",
-      "url": "trojan://humanity@104.18.152.161:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&host=www.ignitelimit.com&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 697.9,
+      "protocol": "VMESS",
+      "url": "vmess://eyJ2IjpudWxsLCJwcyI6IlVTIPCfh7rwn4e4IHwgQFJheWRpa2FseCB8IEUzMzkxMyIsImFkZCI6IjgyLjE5OC4yNDYuMjMzIiwicG9ydCI6MTgwLCJpZCI6ImQxM2ZjMmY1LTNlMDUtNDc5NS04MWViLTQ0MTQzYTA5ZTU1MiIsImFpZCI6IjAiLCJzY3kiOm51bGwsIm5ldCI6InRjcCIsInR5cGUiOm51bGwsImhvc3QiOiJzZXJpYnVzLm9yZyIsImFscG4iOm51bGwsInBhdGgiOiIvIiwidGxzIjoiIiwic25pIjpudWxsLCJmcCI6bnVsbCwibmFtZSI6IlVTIPCfh7rwn4e4IHwgQFJheWRpa2FseCB8IEUzMzkxMyJ9",
+      "latency_ms": 554.2,
       "quality": "usable"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@198.41.223.96:443?alpn=http%2F1.1%2Ch2%2Ch3&fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 711.6,
+      "url": "trojan://humanity@104.18.152.97:443?security=tls&sni=www.ignitelimit.com&type=ws&path=%2Fassignment&Host=www.ignitelimit.com#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 688.5,
+      "quality": "usable"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://humanity@104.18.22.63:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 695.9,
+      "quality": "usable"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://humanity@104.16.174.6:443?host=www.ignitelimit.com&path=/assignment&sni=www.ignitelimit.com&type=ws#CA 🇨🇦 | @Raydikalx | 08A7A1",
+      "latency_ms": 710.2,
       "quality": "usable"
     },
     {
       "protocol": "VLESS",
-      "url": "vless://fc72e947-b8dd-4de0-9ec7-2b0050c9f83a@141.8.199.212:4100?encryption=none&host=live.ok.ru&path=/v1&security=none&type=ws#RU 🇷🇺 | @Raydikalx | 12B9E6",
-      "latency_ms": 807.4,
-      "quality": "usable"
-    },
-    {
-      "protocol": "VLESS",
-      "url": "vless://70e20b2e-3b1f-4c25-9a3d-9240570391bb@usejh2.neobo-tooth.ru:2096?security=none&type=ws&path=/&host=usejh2.neobo-tooth.ru&packetEncoding=xudp&sni=usejh2.neobo-tooth.ru#FR 🇫🇷 | @Raydikalx | B1E13C",
-      "latency_ms": 836.6,
-      "quality": "usable"
-    },
-    {
-      "protocol": "VLESS",
-      "url": "vless://8dd3f783-aa97-420b-8aaa-d8a6c9679dad@116.204.164.30:7443?encryption=none&security=tls&sni=c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev&type=ws&host=c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev&path=/@Marisa_kristi#IT 🇮🇹 | @Raydikalx | 843675",
-      "latency_ms": 872.7,
+      "url": "vless://93dac4b8-3879-4179-abdb-9666a9e2ca8d@87.120.84.32:33843?encryption=none&fp=firefox&security=tls&sni=deproxy2.lckdwn.ru&type=tcp#DE 🇩🇪 | @Raydikalx | 5C3824",
+      "latency_ms": 859.0,
       "quality": "usable"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@104.16.174.143:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 906.9,
+      "url": "trojan://humanity@104.16.174.71:443?host=www.ignitelimit.com&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 874.9,
       "quality": "usable"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@104.26.14.137:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&host=www.ignitelimit.com&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 980.4,
+      "url": "trojan://humanity@216.24.57.1:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+%E5%8A%A0%E5%B7%9E",
+      "latency_ms": 887.2,
       "quality": "usable"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@141.101.90.101:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E6%B3%95%E5%9B%BD%E5%B7%B4%E9%BB%8E+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 985.8,
+      "url": "trojan://humanity@104.16.174.46:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 897.2,
       "quality": "usable"
     },
     {
       "protocol": "TROJAN",
       "url": "trojan://humanity@176.97.66.175:443?security=tls&sni=www.ignitelimit.com&fp=chrome&insecure=0&allowInsecure=0&type=ws&path=%2Fassignment#%E8%8B%B1%E5%9B%BD+V2CROSS.COM",
-      "latency_ms": 1001.3,
+      "latency_ms": 1040.2,
+      "quality": "slow"
+    },
+    {
+      "protocol": "VLESS",
+      "url": "vless://78791f9e-fe09-4d4f-88ec-895764bae0d6@pl2.lckdwn.ru:443?&type=ws&headerType=none&host=pl2.lckdwn.ru&path=%2F#%E4%BC%8A%E6%9C%97+V2CROSS.COM",
+      "latency_ms": 1097.6,
+      "quality": "slow"
+    },
+    {
+      "protocol": "VMESS",
+      "url": "vmess://eyJhZGQiOiJydXNoLTZpdDZiLnRlZW9wcC5xdWVzdCIsImFpZCI6IjAiLCJob3N0IjoicnVzaC02aXQ2Yi50ZWVvcHAucXVlc3QiLCJpZCI6IjAzZmNjNjE4LWI5M2QtNjc5Ni02YWVkLThhMzhjOTc1ZDU4MSIsIm5ldCI6IndzIiwicGF0aCI6Ii92aWRlby9rejQ5aGYvZ2JpbjVqdmUubTN1OCIsInBvcnQiOiI0NDMiLCJwcyI6IkNBIPCfh6jwn4emIHwgQFJheWRpa2FseCB8IDAwREZGRSIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ==",
+      "latency_ms": 1265.6,
       "quality": "slow"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@104.16.174.148:443?security=tls&sni=www.ignitelimit.com&type=ws&path=%2Fassignment&Host=www.ignitelimit.com#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 1105.5,
+      "url": "trojan://humanity@86.38.214.205:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&host=www.ignitelimit.com&path=%2Fassignment#%E7%AB%8B%E9%99%B6%E5%AE%9B+V2CROSS.COM",
+      "latency_ms": 1303.9,
       "quality": "slow"
     },
     {
-      "protocol": "TROJAN",
-      "url": "trojan://humanity@104.20.6.134:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 1278.0,
-      "quality": "slow"
+      "protocol": "VLESS",
+      "url": "vless://cf39fab0-bb85-42cb-9945-2ad69d78e575@91.110.174.210:8443?encryption=none&security=tls&sni=rubifen.adaspoloandco.com&insecure=0&allowInsecure=0&type=ws&host=rubifen.adaspoloandco.com&path=%2FGOrbEh#%E8%8B%B1%E5%9B%BD+V2CROSS.COM",
+      "latency_ms": 2539.1,
+      "quality": "very_slow"
     },
     {
-      "protocol": "TROJAN",
-      "url": "trojan://humanity@104.18.152.207:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&host=www.ignitelimit.com&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 1531.1,
+      "protocol": "VLESS",
+      "url": "vless://db7de26b-96d8-452c-8b9d-4a6bf55a7da7@87.249.54.103:4100?path=/v1&security=none&encryption=none&host=live.ok.ru&type=ws#%E4%BF%84%E7%BD%97%E6%96%AF+V2CROSS.COM",
+      "latency_ms": 3568.5,
+      "quality": "very_slow"
+    },
+    {
+      "protocol": "VMESS",
+      "url": "vmess://eyJhZGQiOiIzOC4xMDcuMjM0LjU3IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiIiLCJpZCI6IjU2N2Y0YmU1LTEyYWItNDJlMS1iOGQ5LWRiNmZkMWZkZDMxYyIsIm5ldCI6IndzIiwicGF0aCI6Ii92bWVzcy8iLCJwb3J0IjoiODAiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Ii0tLSIsInYiOiIyIiwicHMiOiJLWiDwn4ew8J+HvyB8IEBSYXlkaWthbHggfCAwNjQwNjAifQ==",
+      "latency_ms": 4442.1,
       "quality": "very_slow"
     }
   ]
