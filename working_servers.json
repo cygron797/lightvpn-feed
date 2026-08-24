@@ -1,103 +1,91 @@
 {
-  "updated_at": "2026-08-24T11:14:00Z",
+  "updated_at": "2026-08-24T12:15:01Z",
   "tested": 80,
-  "working": 16,
-  "failed": 64,
+  "working": 14,
+  "failed": 66,
   "servers": [
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@104.18.23.63:443?allowInsecure=1&alpn=http%2F1.1&fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 713.9,
+      "url": "trojan://humanity@104.16.174.109:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 722.2,
       "quality": "usable"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@188.114.97.7:443?security=tls&sni=www.ignitelimit.com&type=ws&path=%2Fassignment&Host=www.ignitelimit.com#%E5%B7%B4%E8%A5%BF%E5%9C%A3%E4%BF%9D%E7%BD%97+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 722.3,
+      "url": "trojan://humanity@104.16.174.36:443?type=ws&host=www.ignitelimit.com&path=/assignment&security=tls&sni=www.ignitelimit.com#CA 🇨🇦 | @Raydikalx | 736B50",
+      "latency_ms": 725.1,
       "quality": "usable"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@render.com:443?path=/assignment&security=tls&insecure=0&host=www.ignitelimit.com&ech=ip.gs+udp://8.8.8.8&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%E7%BE%8E%E5%9B%BD+%E5%8A%A0%E5%B7%9E",
-      "latency_ms": 725.0,
+      "url": "trojan://humanity@104.18.152.103:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 749.5,
       "quality": "usable"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@104.16.174.37:443?allowInsecure=1&host=www.ignitelimit.com&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 735.6,
+      "url": "trojan://humanity@165.215.250.14:443?security=tls&sni=www.ignitelimit.com&fp=chrome&insecure=0&allowInsecure=0&type=ws&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+V2CROSS.COM",
+      "latency_ms": 918.9,
       "quality": "usable"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@104.18.152.208:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&host=www.ignitelimit.com&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 736.9,
+      "url": "trojan://humanity@216.24.57.7:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+%E5%8A%A0%E5%B7%9E",
+      "latency_ms": 920.0,
       "quality": "usable"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@104.18.152.219:443?security=tls&sni=www.ignitelimit.com&fp=chrome&insecure=0&allowInsecure=0&type=ws&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 747.3,
-      "quality": "usable"
-    },
-    {
-      "protocol": "TROJAN",
-      "url": "trojan://humanity@104.16.174.72:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 758.7,
-      "quality": "usable"
-    },
-    {
-      "protocol": "TROJAN",
-      "url": "trojan://humanity@104.18.152.233:443?security=tls&sni=www.ignitelimit.com&fp=chrome&insecure=0&allowInsecure=0&type=ws&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 844.6,
+      "url": "trojan://humanity@104.18.152.149:443?security=tls&sni=www.ignitelimit.com&type=ws&path=%2Fassignment&Host=www.ignitelimit.com#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 967.1,
       "quality": "usable"
     },
     {
       "protocol": "VLESS",
-      "url": "vless://93dac4b8-3879-4179-abdb-9666a9e2ca8d@87.120.84.32:33843?encryption=none&fp=firefox&security=tls&sni=deproxy2.lckdwn.ru&type=tcp#DE 🇩🇪 | @Raydikalx | 5C3824",
-      "latency_ms": 924.0,
-      "quality": "usable"
+      "url": "vless://7893b302-3882-4c38-9ab6-6313f1575d1a@144.225.246.111:443?security=tls&type=ws&path=/@zyzzzoao&host=cf.udpid.org&packetEncoding=xudp&sni=cf.udpid.org&fp=chrome#%E7%BE%8E%E5%9B%BD+V2CROSS.COM",
+      "latency_ms": 1083.7,
+      "quality": "slow"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@104.18.152.144:443?security=tls&sni=www.ignitelimit.com&type=ws&path=%2Fassignment&Host=www.ignitelimit.com#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 930.0,
-      "quality": "usable"
+      "url": "trojan://humanity@45.130.125.160:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+V2CROSS.COM",
+      "latency_ms": 1221.7,
+      "quality": "slow"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@104.18.152.229:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 950.6,
-      "quality": "usable"
+      "url": "trojan://humanity@104.20.6.134:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 1270.2,
+      "quality": "slow"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://humanity@104.16.7.70:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 1540.9,
+      "quality": "very_slow"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://humanity@104.18.22.63:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 1608.5,
+      "quality": "very_slow"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://humanity@104.18.152.207:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 2972.5,
+      "quality": "very_slow"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://humanity@www.speedtest.org:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 5888.6,
+      "quality": "very_slow"
     },
     {
       "protocol": "VLESS",
-      "url": "vless://a88e2744-3555-4a0a-9635-0aae23e038f8@45.134.38.204:8055?encryption=none&security=reality&sni=www.amd.com&fp=chrome&pbk=hjJ1VN2xwcl1n7vrwvOspB2NFWrXNySUNPexutOVvAM&sid=62ea22&spx=/By66s3iUWhbhjVm&type=tcp&headerType=none#%E7%BE%8E%E5%9B%BD+V2CROSS.COM",
-      "latency_ms": 1143.9,
-      "quality": "slow"
-    },
-    {
-      "protocol": "VLESS",
-      "url": "vless://694eb5d5-794c-4389-af65-e5a4b8489dae@89.167.2.67:443?security=reality&type=tcp&packetEncoding=xudp&sni=play.google.com&fp=chrome&sid=b58b&pbk=Qr6_9TMQYMCB2hVSYeONcMvxBqIaT0mzPUy8nIivV1g#%E6%B3%A2%E5%85%B0+V2CROSS.COM",
-      "latency_ms": 1152.8,
-      "quality": "slow"
-    },
-    {
-      "protocol": "VMESS",
-      "url": "vmess://eyJ2IjoiMiIsInBzIjoiSEsg8J+HrfCfh7AgfCBAUmF5ZGlrYWx4IHwgNTQ3NjI2IiwiYWRkIjoibGN2OHY5bDdveWFteHhmei52LjNkbnMudmlwIiwicG9ydCI6IjQ0MyIsInR5cGUiOiJub25lIiwiaWQiOiJmMjNiYjQyN2MxZjk0MzczODc2YzJmNDNlOWY3OTBmMyIsImFpZCI6IjAiLCJuZXQiOiJ3cyIsInBhdGgiOiIvd3Mtdm1lc3MiLCJob3N0IjoibGN2OHY5bDdPeWFteHhmWi52LjNkbnMudmlwIiwidGxzIjoidGxzIn0=",
-      "latency_ms": 1192.8,
-      "quality": "slow"
-    },
-    {
-      "protocol": "TROJAN",
-      "url": "trojan://humanity@104.18.152.230:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 1300.1,
-      "quality": "slow"
-    },
-    {
-      "protocol": "TROJAN",
-      "url": "trojan://humanity@104.18.152.159:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 1626.4,
+      "url": "vless://a88e2744-3555-4a0a-9635-0aae23e038f8@45.134.38.204:8059?encryption=none&security=reality&sni=www.amd.com&fp=chrome&pbk=hjJ1VN2xwcl1n7vrwvOspB2NFWrXNySUNPexutOVvAM&sid=d3aea86e1949&spx=/CbvXqacLeVJd0uz&type=tcp&headerType=none#%E7%BE%8E%E5%9B%BD+V2CROSS.COM",
+      "latency_ms": 6812.2,
       "quality": "very_slow"
     }
   ]
