@@ -1,61 +1,43 @@
 {
-  "updated_at": "2026-08-25T05:13:28Z",
+  "updated_at": "2026-08-25T06:13:01Z",
   "tested": 80,
-  "working": 9,
-  "failed": 71,
+  "working": 6,
+  "failed": 74,
   "servers": [
     {
-      "protocol": "VLESS",
-      "url": "vless://b19b768d-bc57-4d03-9bea-61129ed5fef9@188.114.97.6:8880?encryption=none&host=new.106-79e.workers.dev&path=/pyip=ProxyIP.SG.CMLiussss.net&security=none&type=ws#CA 🇨🇦 | @Raydikalx | B86AFE",
-      "latency_ms": 43.9,
-      "quality": "excellent"
-    },
-    {
-      "protocol": "VMESS",
-      "url": "vmess://eyJhZGQiOiAiNjIuMjEwLjEyNy4xMjAiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiZW5nYWdlLmNsb3VkZmxhcmVjbGllbnQuY29tIiwgImlkIjogIjNhOTY2ZDIwLTdiOWQtNDhjYy1iYTJjLThkMzgxNjFiNmQzYSIsICJpbnNlY3VyZSI6ICIwIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi9naXRodWIuY29tL0FsdmluOTk5OS1uZXdwYWMvZmFucWlhbmciLCAicGNzIjogIiIsICJwb3J0IjogIjIzMzg4IiwgInBzIjogIlx1NmNkNVx1NTZmZCBPTkxJTkUgUy5BLlMuXHU2NTcwXHU2MzZlXHU0ZTJkXHU1ZmMzIiwgInNjeSI6ICJhdXRvIiwgInNlY3VyaXR5IjogImF1dG8iLCAic25pIjogIiIsICJ0bHMiOiAiIiwgInR5cGUiOiAiLS0tIiwgInYiOiAiMiIsICJ2Y24iOiAiIn0=",
-      "latency_ms": 624.5,
+      "protocol": "TROJAN",
+      "url": "trojan://MiTiVPN@140.248.185.253:443?path=/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-w@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN&security=tls&alpn=http/1.1&insecure=0&host=4x-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=0&sni=ssl.fastly.com#%E7%BE%8E%E5%9B%BD+V2CROSS.COM",
+      "latency_ms": 933.6,
       "quality": "usable"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@104.21.46.3:443?security=tls&sni=www.ignitelimit.com&alpn=h3%2Ch2%2Chttp%2F1.1&insecure=0&allowInsecure=0&type=ws&host=www.ignitelimit.com&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 714.5,
+      "url": "trojan://humanity@141.101.90.101:443?security=tls&sni=www.ignitelimit.com&fp=chrome&insecure=0&allowInsecure=0&type=ws&path=%2Fassignment#%E6%B3%95%E5%9B%BD%E5%B7%B4%E9%BB%8E+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 986.3,
       "quality": "usable"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@198.41.223.96:443?security=tls&sni=www.ignitelimit.com&type=ws&path=%2Fassignment&Host=www.ignitelimit.com#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 883.7,
-      "quality": "usable"
-    },
-    {
-      "protocol": "TROJAN",
-      "url": "trojan://humanity@join-telegram-channel-tirexnet.trex.kdns.fr:443?security=tls&sni=www.ignitelimit.com&alpn=h3%2Ch2%2Chttp%2F1.1&insecure=0&allowInsecure=0&type=ws&host=www.ignitelimit.com&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 985.4,
-      "quality": "usable"
-    },
-    {
-      "protocol": "TROJAN",
-      "url": "trojan://humanity@176.97.66.175:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E8%8B%B1%E5%9B%BD+V2CROSS.COM",
-      "latency_ms": 1165.2,
+      "url": "trojan://humanity@104.26.14.137:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 1239.9,
       "quality": "slow"
     },
     {
-      "protocol": "VLESS",
-      "url": "vless://93dac4b8-3879-4179-abdb-9666a9e2ca8d@87.120.84.32:33843?encryption=none&fp=firefox&security=tls&sni=deproxy2.lckdwn.ru&type=tcp#DE 🇩🇪 | @Raydikalx | 5C3824",
-      "latency_ms": 1372.6,
+      "protocol": "TROJAN",
+      "url": "trojan://humanity@www.speedtest.org:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&host=www.ignitelimit.com&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 1253.6,
       "quality": "slow"
     },
     {
       "protocol": "VLESS",
       "url": "vless://b585dc5e-55bf-4a8b-913a-27c9ccac05c3@81.95.4.189:443?path=/vws/&security=tls&encryption=none&insecure=0&host=bab-6.site&fp=chrome&type=ws&allowInsecure=0&sni=bab-6.site#DE 🇩🇪 | @Raydikalx | FBC6F5",
-      "latency_ms": 1408.0,
+      "latency_ms": 1448.0,
       "quality": "slow"
     },
     {
-      "protocol": "VLESS",
-      "url": "vless://363c62f2-3f2e-4b20-87eb-78765a67df25@151.101.56.7:443?security=tls&type=ws&path=/TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053&host=pane2.global.ssl.fastly.net&packetEncoding=xudp&sni=ssl.fastly.com&fp=chrome&encryption=none#%E7%BE%8E%E5%9B%BD+%E4%B9%94%E6%B2%BB%E4%BA%9A%E6%B4%B2%E4%BA%9A%E7%89%B9%E5%85%B0%E5%A4%A7Fastly%E8%8A%82%E7%82%B9",
-      "latency_ms": 6046.3,
+      "protocol": "TROJAN",
+      "url": "trojan://humanity@176.97.66.175:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E8%8B%B1%E5%9B%BD+V2CROSS.COM",
+      "latency_ms": 2639.7,
       "quality": "very_slow"
     }
   ]
