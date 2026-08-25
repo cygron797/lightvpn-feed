@@ -1,49 +1,49 @@
 {
-  "updated_at": "2026-08-25T08:13:42Z",
+  "updated_at": "2026-08-25T09:14:33Z",
   "tested": 80,
   "working": 7,
   "failed": 73,
   "servers": [
     {
-      "protocol": "VMESS",
-      "url": "vmess://eyJhZGQiOiI4Mi4xOTguMjQ2LjM3IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiJLb21hLVlULlBBR2VTLkRldiIsImlkIjoiZDEzZmMyZjUtM2UwNS00Nzk1LTgxZWItNDQxNDNhMDllNTUyIiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6Ii90clRlbGVncmFt8J+HqPCfh7MgQFdhbmdDYWkyIiwicG9ydCI6IjE4MCIsInBzIjoiVVMg8J+HuvCfh7ggfCBAUmF5ZGlrYWx4IHwgQUE1MTBGIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==",
-      "latency_ms": 569.4,
+      "protocol": "TROJAN",
+      "url": "trojan://M%69TiVPN@140.248.185.253:443?path=%2F---%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN%2Fs-w%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN&security=tls&alpn=http%2F1.1&insecure=0&host=4x-m%69tivpn--m%69tivpn------m%69tivpn.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=1&sni=ssl.fastly.com#%E7%BE%8E%E5%9B%BD+V2CROSS.COM",
+      "latency_ms": 839.5,
+      "quality": "usable"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://humanity@188.114.97.7:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&host=www.ignitelimit.com&path=%2Fassignment#%E5%B7%B4%E8%A5%BF%E5%9C%A3%E4%BF%9D%E7%BD%97+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 932.7,
       "quality": "usable"
     },
     {
       "protocol": "VMESS",
-      "url": "vmess://eyJ2IjoiMiIsInBzIjoiVVMg8J+HuvCfh7ggfCBAUmF5ZGlrYWx4IHwgOUI0RjgzIiwiYWRkIjoiMTI5LjE0Ni43Ny4yNDgiLCJwb3J0IjozOTQ5NSwiaWQiOiJmODM2YzczNi04N2ZjLTRmZGUtYWFiYy0wMDg1N2VjZGZmM2UiLCJuZXQiOiJ3cyIsInR5cGUiOiJub25lIiwiaG9zdCI6IjEyOS4xNDYuNzcuMjQ4IiwicGF0aCI6Ii9jY3R2MTMubTN1OCJ9",
-      "latency_ms": 773.6,
-      "quality": "usable"
-    },
-    {
-      "protocol": "TROJAN",
-      "url": "trojan://humanity@join-telegram-channel.tirexnet.kdns.fr:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 908.5,
-      "quality": "usable"
-    },
-    {
-      "protocol": "TROJAN",
-      "url": "trojan://humanity@104.26.15.137:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&host=www.ignitelimit.com&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 1237.0,
+      "url": "vmess://eyJhZGQiOiAicnVzaC13MW5pdS50ZWVvcHAub25saW5lIiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImZwIjogIiIsICJob3N0IjogInJ1c2gtdzFuaXUudGVlb3BwLm9ubGluZSIsICJpZCI6ICIwM2ZjYzYxOC1iOTNkLTY3OTYtNmFlZC04YTM4Yzk3NWQ1ODEiLCAibmV0IjogIndzIiwgInBhdGgiOiAiL3ZpZGVvL3Y0c3gzcS96eHpydXJrYy5tM3U4IiwgInBvcnQiOiAiNDQzIiwgInBzIjogIlx1N2Y4ZVx1NTZmZCBDbG91ZEZsYXJlXHU4MjgyXHU3MGI5IiwgInNjeSI6ICJhdXRvIiwgInNlY3VyaXR5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsICJzbmkiOiAiIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiJ9",
+      "latency_ms": 1220.9,
       "quality": "slow"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@176.97.66.175:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E8%8B%B1%E5%9B%BD+V2CROSS.COM",
-      "latency_ms": 1400.2,
+      "url": "trojan://humanity@176.97.66.175:443?security=tls&sni=www.ignitelimit.com&type=ws&path=%2Fassignment&Host=www.ignitelimit.com#%E8%8B%B1%E5%9B%BD+V2CROSS.COM",
+      "latency_ms": 1300.0,
       "quality": "slow"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@172.67.221.242:443?alpn=h3%2Ch2%2Chttp%2F1.1&fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 1534.7,
+      "url": "trojan://ND91608427@44.246.163.102:443?fp=chrome&sni=fleet-bonefish.rooster465.autos#US 🇺🇸 | @Raydikalx | 7E7A7C",
+      "latency_ms": 1597.1,
       "quality": "very_slow"
     },
     {
       "protocol": "VLESS",
       "url": "vless://XpnTeam-35@199.232.78.160:443?path=/&security=tls&alpn=http/1.1&encryption=none&insecure=0&host=Appxdn.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=0&sni=ssl.fastly.com#%E7%BE%8E%E5%9B%BD+V2CROSS.COM",
-      "latency_ms": 1660.4,
+      "latency_ms": 1753.7,
+      "quality": "very_slow"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://humanity@2.144.21.112:40443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E4%BC%8A%E6%9C%97+V2CROSS.COM",
+      "latency_ms": 1944.1,
       "quality": "very_slow"
     }
   ]
