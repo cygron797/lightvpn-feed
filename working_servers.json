@@ -1,49 +1,37 @@
 {
-  "updated_at": "2026-08-25T09:14:33Z",
+  "updated_at": "2026-08-25T10:14:37Z",
   "tested": 80,
-  "working": 7,
-  "failed": 73,
+  "working": 5,
+  "failed": 75,
   "servers": [
     {
       "protocol": "TROJAN",
-      "url": "trojan://M%69TiVPN@140.248.185.253:443?path=%2F---%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN%2Fs-w%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN&security=tls&alpn=http%2F1.1&insecure=0&host=4x-m%69tivpn--m%69tivpn------m%69tivpn.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=1&sni=ssl.fastly.com#%E7%BE%8E%E5%9B%BD+V2CROSS.COM",
-      "latency_ms": 839.5,
-      "quality": "usable"
-    },
-    {
-      "protocol": "TROJAN",
       "url": "trojan://humanity@188.114.97.7:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&host=www.ignitelimit.com&path=%2Fassignment#%E5%B7%B4%E8%A5%BF%E5%9C%A3%E4%BF%9D%E7%BD%97+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 932.7,
+      "latency_ms": 768.6,
       "quality": "usable"
     },
     {
-      "protocol": "VMESS",
-      "url": "vmess://eyJhZGQiOiAicnVzaC13MW5pdS50ZWVvcHAub25saW5lIiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImZwIjogIiIsICJob3N0IjogInJ1c2gtdzFuaXUudGVlb3BwLm9ubGluZSIsICJpZCI6ICIwM2ZjYzYxOC1iOTNkLTY3OTYtNmFlZC04YTM4Yzk3NWQ1ODEiLCAibmV0IjogIndzIiwgInBhdGgiOiAiL3ZpZGVvL3Y0c3gzcS96eHpydXJrYy5tM3U4IiwgInBvcnQiOiAiNDQzIiwgInBzIjogIlx1N2Y4ZVx1NTZmZCBDbG91ZEZsYXJlXHU4MjgyXHU3MGI5IiwgInNjeSI6ICJhdXRvIiwgInNlY3VyaXR5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsICJzbmkiOiAiIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiJ9",
-      "latency_ms": 1220.9,
-      "quality": "slow"
-    },
-    {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@176.97.66.175:443?security=tls&sni=www.ignitelimit.com&type=ws&path=%2Fassignment&Host=www.ignitelimit.com#%E8%8B%B1%E5%9B%BD+V2CROSS.COM",
-      "latency_ms": 1300.0,
-      "quality": "slow"
-    },
-    {
-      "protocol": "TROJAN",
-      "url": "trojan://ND91608427@44.246.163.102:443?fp=chrome&sni=fleet-bonefish.rooster465.autos#US 🇺🇸 | @Raydikalx | 7E7A7C",
-      "latency_ms": 1597.1,
+      "url": "trojan://humanity@2.144.21.112:40443?security=tls&sni=www.ignitelimit.com&type=ws&host=www.ignitelimit.com&path=/assignment&allowInsecure=1#IR 🇮🇷 | @Raydikalx | 34EA79",
+      "latency_ms": 2055.3,
       "quality": "very_slow"
     },
     {
       "protocol": "VLESS",
-      "url": "vless://XpnTeam-35@199.232.78.160:443?path=/&security=tls&alpn=http/1.1&encryption=none&insecure=0&host=Appxdn.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=0&sni=ssl.fastly.com#%E7%BE%8E%E5%9B%BD+V2CROSS.COM",
-      "latency_ms": 1753.7,
+      "url": "vless://bbde90cd-b6a9-49ba-cab0-71ae12738502@k2.cloud--vpn.site:443?path=/&security=tls&alpn=h2&encryption=none&insecure=0&host=c12.com&fp=chrome&type=ws&allowInsecure=0&sni=ssl.fastly.com#%E7%BE%8E%E5%9B%BD+%E4%B9%94%E6%B2%BB%E4%BA%9A%E6%B4%B2%E4%BA%9A%E7%89%B9%E5%85%B0%E5%A4%A7Fastly%E8%8A%82%E7%82%B9",
+      "latency_ms": 2670.8,
       "quality": "very_slow"
     },
     {
-      "protocol": "TROJAN",
-      "url": "trojan://humanity@2.144.21.112:40443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E4%BC%8A%E6%9C%97+V2CROSS.COM",
-      "latency_ms": 1944.1,
+      "protocol": "VLESS",
+      "url": "vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@5.61.46.9:443?path=/api/v1/irc&security=tls&encryption=none&insecure=0&host=vod.ensf.top&fp=chrome&type=ws&allowInsecure=0&sni=vod.ensf.top#%E5%BE%B7%E5%9B%BD+V2CROSS.COM",
+      "latency_ms": 5851.1,
+      "quality": "very_slow"
+    },
+    {
+      "protocol": "VMESS",
+      "url": "vmess://eyJhZGQiOiJub2RlLXVrLmNvbm5lY3RzdWl0ZS5vcmciLCJhaWQiOiIwIiwiYWxwbiI6ImgyLGh0dHAvMS4xIiwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiI3MmYyY2JlNC0yODc0LTQ1YjctYjZhYS1iOTMwNzdjMTBjNzIiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicGNzIjoiIiwicG9ydCI6IjIwNTMiLCJwcyI6IkdCIPCfh6zwn4enIHwgQFJheWRpa2FseCB8IDBGQ0I1RSIsInNjeSI6ImF1dG8iLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJzbmkiOiIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIiwidmNuIjoiIn0=",
+      "latency_ms": 9104.3,
       "quality": "very_slow"
     }
   ]
