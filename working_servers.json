@@ -1,37 +1,25 @@
 {
-  "updated_at": "2026-08-25T10:14:37Z",
+  "updated_at": "2026-08-25T11:12:39Z",
   "tested": 80,
-  "working": 5,
-  "failed": 75,
+  "working": 3,
+  "failed": 77,
   "servers": [
     {
-      "protocol": "TROJAN",
-      "url": "trojan://humanity@188.114.97.7:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&host=www.ignitelimit.com&path=%2Fassignment#%E5%B7%B4%E8%A5%BF%E5%9C%A3%E4%BF%9D%E7%BD%97+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 768.6,
+      "protocol": "VMESS",
+      "url": "vmess://eyJhZGQiOiI2Mi4yMTAuMTI3LjEyMCIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiZW5nYWdlLmNsb3VkZmxhcmVjbGllbnQuY29tIiwiaWQiOiIzYTk2NmQyMC03YjlkLTQ4Y2MtYmEyYy04ZDM4MTYxYjZkM2EiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ3cyIsInBhdGgiOiIvZ2l0aHViLmNvbS9BbHZpbjk5OTktbmV3cGFjL2ZhbnFpYW5nIiwicGNzIjoiIiwicG9ydCI6IjIzMzg4IiwicHMiOiJGUiDwn4er8J+HtyB8IEBSYXlkaWthbHggfCA0QjYzNzIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Ii0tLSIsInYiOiIyIiwidmNuIjoiIn0=",
+      "latency_ms": 636.3,
       "quality": "usable"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@2.144.21.112:40443?security=tls&sni=www.ignitelimit.com&type=ws&host=www.ignitelimit.com&path=/assignment&allowInsecure=1#IR 🇮🇷 | @Raydikalx | 34EA79",
-      "latency_ms": 2055.3,
-      "quality": "very_slow"
+      "url": "trojan://5e89314202a8405f@kuso30.pacemakere.com:101?allowInsecure=0#GB 🇬🇧 | @Raydikalx | 758CDE",
+      "latency_ms": 832.4,
+      "quality": "usable"
     },
     {
       "protocol": "VLESS",
-      "url": "vless://bbde90cd-b6a9-49ba-cab0-71ae12738502@k2.cloud--vpn.site:443?path=/&security=tls&alpn=h2&encryption=none&insecure=0&host=c12.com&fp=chrome&type=ws&allowInsecure=0&sni=ssl.fastly.com#%E7%BE%8E%E5%9B%BD+%E4%B9%94%E6%B2%BB%E4%BA%9A%E6%B4%B2%E4%BA%9A%E7%89%B9%E5%85%B0%E5%A4%A7Fastly%E8%8A%82%E7%82%B9",
-      "latency_ms": 2670.8,
-      "quality": "very_slow"
-    },
-    {
-      "protocol": "VLESS",
-      "url": "vless://e911c552-3a98-41e0-b5fb-0dd3879887b7@5.61.46.9:443?path=/api/v1/irc&security=tls&encryption=none&insecure=0&host=vod.ensf.top&fp=chrome&type=ws&allowInsecure=0&sni=vod.ensf.top#%E5%BE%B7%E5%9B%BD+V2CROSS.COM",
-      "latency_ms": 5851.1,
-      "quality": "very_slow"
-    },
-    {
-      "protocol": "VMESS",
-      "url": "vmess://eyJhZGQiOiJub2RlLXVrLmNvbm5lY3RzdWl0ZS5vcmciLCJhaWQiOiIwIiwiYWxwbiI6ImgyLGh0dHAvMS4xIiwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiI3MmYyY2JlNC0yODc0LTQ1YjctYjZhYS1iOTMwNzdjMTBjNzIiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicGNzIjoiIiwicG9ydCI6IjIwNTMiLCJwcyI6IkdCIPCfh6zwn4enIHwgQFJheWRpa2FseCB8IDBGQ0I1RSIsInNjeSI6ImF1dG8iLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJzbmkiOiIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIiwidmNuIjoiIn0=",
-      "latency_ms": 9104.3,
+      "url": "vless://27315937-5479-49fd-867d-6b2f17246708@199.232.78.159:443?encryption=none&security=tls&sni=ssl.fastly.com&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=pan1.global.ssl.fastly.net&path=%2FTELEGRAM_NUFiLTER%2CTELEGRAM_NUFiLTER%2CTELEGRAM_NUFiLTER%2CTELEGRAM_NUFiLTER%2CTELEGRAM_NUFiLTER%2CTELEGRAM_NUFiLTER%2CTELEGRAM_NUFiLTER%3Fed%3D2053#%E7%BE%8E%E5%9B%BD+V2CROSS.COM",
+      "latency_ms": 2870.4,
       "quality": "very_slow"
     }
   ]
