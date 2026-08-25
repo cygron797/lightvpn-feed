@@ -1,0 +1,523 @@
+name: Check LightVPN Nodes
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */2 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  check-nodes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install sing-box
+        shell: bash
+        run: |
+          set -e
+
+          VERSION="1.13.19"
+
+          wget -q \
+            "https://github.com/SagerNet/sing-box/releases/download/v${VERSION}/sing-box-${VERSION}-linux-amd64.tar.gz" \
+            -O sing-box.tar.gz
+
+          tar -xzf sing-box.tar.gz
+
+          cp "sing-box-${VERSION}-linux-amd64/sing-box" ./sing-box
+
+          chmod +x ./sing-box
+
+          ./sing-box version
+
+      - name: Check VLESS nodes
+        env:
+          NODE_LIST: ${{ secrets.NODE_LIST }}
+        shell: bash
+        run: |
+          set -e
+
+          # --------------------------------------------------
+          # Prepare node list
+          # --------------------------------------------------
+
+          printf '%s\n' "$NODE_LIST" > nodes.txt
+
+          NODE_COUNT=$(grep -c '^vless://' nodes.txt || true)
+
+          echo "=============================================="
+          echo "LightVPN node checker"
+          echo "VLESS nodes found: $NODE_COUNT"
+          echo "=============================================="
+
+          if [ "$NODE_COUNT" -eq 0 ]; then
+            echo "ERROR: NODE_LIST contains no VLESS nodes."
+            exit 1
+          fi
+
+          mkdir -p results
+
+          # --------------------------------------------------
+          # Python checker
+          # --------------------------------------------------
+
+          python3 - <<'PY'
+          import json
+          import os
+          import signal
+          import subprocess
+          import time
+          import urllib.parse
+          from pathlib import Path
+
+          INPUT_FILE = Path("nodes.txt")
+          TEMP_FILE = Path("working_servers.new.json")
+          OLD_FILE = Path("working_servers.json")
+
+          nodes = INPUT_FILE.read_text(
+              encoding="utf-8",
+              errors="ignore"
+          ).splitlines()
+
+          nodes = [
+              line.strip()
+              for line in nodes
+              if line.strip().startswith("vless://")
+          ]
+
+          print(f"Found {len(nodes)} VLESS nodes.")
+
+          working = []
+
+          def stop_process(proc):
+              if proc is None:
+                  return
+
+              if proc.poll() is None:
+                  proc.terminate()
+
+                  try:
+                      proc.wait(timeout=5)
+                  except subprocess.TimeoutExpired:
+                      proc.kill()
+
+                      try:
+                          proc.wait(timeout=2)
+                      except subprocess.TimeoutExpired:
+                          pass
+
+          for index, link in enumerate(nodes, 1):
+
+              print("")
+              print("=" * 70)
+              print(f"Testing node {index}/{len(nodes)}")
+              print("=" * 70)
+
+              proc = None
+              proxy_port = 18080 + index
+
+              try:
+                  parsed = urllib.parse.urlparse(link)
+
+                  uuid = parsed.username
+                  server = parsed.hostname
+                  port = parsed.port
+
+                  params = urllib.parse.parse_qs(parsed.query)
+
+                  security = params.get("security", ["none"])[0]
+                  transport = params.get("type", ["tcp"])[0]
+
+                  host = params.get(
+                      "host",
+                      [parsed.hostname]
+                  )[0]
+
+                  sni = params.get(
+                      "sni",
+                      [host]
+                  )[0]
+
+                  path = urllib.parse.unquote(
+                      params.get("path", ["/"])[0]
+                  )
+
+                  fp = params.get(
+                      "fp",
+                      ["chrome"]
+                  )[0]
+
+                  # ------------------------------------------
+                  # Basic validation
+                  # ------------------------------------------
+
+                  if not uuid or not server or not port:
+                      print(
+                          "FAIL: invalid UUID/server/port"
+                      )
+                      continue
+
+                  if transport not in (
+                      "ws",
+                      "tcp",
+                      "httpupgrade",
+                      "grpc"
+                  ):
+                      print(
+                          f"FAIL: unsupported transport: {transport}"
+                      )
+                      continue
+
+                  # ------------------------------------------
+                  # Build sing-box configuration
+                  # ------------------------------------------
+
+                  outbound = {
+                      "type": "vless",
+                      "tag": "proxy-out",
+
+                      "server": server,
+                      "server_port": port,
+                      "uuid": uuid
+                  }
+
+                  # TLS
+                  if security == "tls":
+
+                      tls_config = {
+                          "enabled": True,
+                          "server_name": sni,
+                          "utls": {
+                              "enabled": True,
+                              "fingerprint": fp
+                          }
+                      }
+
+                      outbound["tls"] = tls_config
+
+                  # Transport
+                  if transport == "ws":
+
+                      outbound["transport"] = {
+                          "type": "ws",
+                          "path": path,
+                          "headers": {
+                              "Host": host
+                          }
+                      }
+
+                  elif transport == "httpupgrade":
+
+                      outbound["transport"] = {
+                          "type": "httpupgrade",
+                          "path": path,
+                          "headers": {
+                              "Host": host
+                          }
+                      }
+
+                  elif transport == "grpc":
+
+                      service_name = params.get(
+                          "serviceName",
+                          [""]
+                      )[0]
+
+                      outbound["transport"] = {
+                          "type": "grpc",
+                          "service_name": service_name
+                      }
+
+                  # tcp does not need a transport object
+
+                  config = {
+                      "log": {
+                          "level": "error"
+                      },
+
+                      "inbounds": [
+                          {
+                              "type": "mixed",
+                              "tag": "proxy",
+
+                              "listen": "127.0.0.1",
+                              "listen_port": proxy_port
+                          }
+                      ],
+
+                      "outbounds": [
+                          outbound
+                      ]
+                  }
+
+                  config_file = Path(
+                      f"test-config-{index}.json"
+                  )
+
+                  config_file.write_text(
+                      json.dumps(
+                          config,
+                          indent=2
+                      ),
+                      encoding="utf-8"
+                  )
+
+                  # ------------------------------------------
+                  # Validate sing-box configuration first
+                  # ------------------------------------------
+
+                  check = subprocess.run(
+                      [
+                          "./sing-box",
+                          "check",
+                          "-c",
+                          str(config_file)
+                      ],
+                      capture_output=True,
+                      text=True
+                  )
+
+                  if check.returncode != 0:
+                      print(
+                          "FAIL: sing-box configuration invalid"
+                      )
+
+                      if check.stderr:
+                          print(check.stderr[-1000:])
+
+                      continue
+
+                  # ------------------------------------------
+                  # Start sing-box
+                  # ------------------------------------------
+
+                  proc = subprocess.Popen(
+                      [
+                          "./sing-box",
+                          "run",
+                          "-c",
+                          str(config_file)
+                      ],
+                      stdout=subprocess.DEVNULL,
+                      stderr=subprocess.DEVNULL
+                  )
+
+                  # Give sing-box time to start
+                  time.sleep(2)
+
+                  if proc.poll() is not None:
+                      print(
+                          "FAIL: sing-box exited during startup"
+                      )
+                      continue
+
+                  # ------------------------------------------
+                  # Test real HTTPS traffic through proxy
+                  # ------------------------------------------
+
+                  start = time.time()
+
+                  result = subprocess.run(
+                      [
+                          "curl",
+
+                          "--proxy",
+                          f"http://127.0.0.1:{proxy_port}",
+
+                          "--noproxy",
+                          "",
+
+                          "--connect-timeout",
+                          "10",
+
+                          "--max-time",
+                          "20",
+
+                          "--silent",
+                          "--show-error",
+
+                          "--output",
+                          "/dev/null",
+
+                          "--write-out",
+                          "%{http_code} %{time_total}",
+
+                          "https://www.google.com/generate_204"
+                      ],
+
+                      capture_output=True,
+                      text=True
+                  )
+
+                  elapsed = time.time() - start
+
+                  output = result.stdout.strip()
+
+                  parts = output.split()
+
+                  # ------------------------------------------
+                  # Determine result
+                  # ------------------------------------------
+
+                  if (
+                      result.returncode == 0
+                      and len(parts) >= 2
+                      and parts[0] == "204"
+                  ):
+
+                      try:
+                          latency = round(
+                              float(parts[1]) * 1000
+                          )
+                      except ValueError:
+                          latency = round(
+                              elapsed * 1000
+                          )
+
+                      print(
+                          f"OK: node {index} | "
+                          f"HTTP 204 | "
+                          f"{latency} ms"
+                      )
+
+                      working.append({
+                          "index": index,
+                          "url": link,
+                          "latency": latency
+                      })
+
+                  else:
+
+                      print(
+                          f"FAIL: node {index} | "
+                          f"curl={result.returncode} | "
+                          f"{output}"
+                      )
+
+                      if result.stderr:
+                          print(
+                              result.stderr[-500:]
+                          )
+
+              except Exception as exc:
+
+                  print(
+                      f"ERROR node {index}: {exc}"
+                  )
+
+              finally:
+
+                  stop_process(proc)
+
+                  try:
+                      config_file.unlink()
+                  except Exception:
+                      pass
+
+          # --------------------------------------------------
+          # Results
+          # --------------------------------------------------
+
+          print("")
+          print("=" * 70)
+          print(
+              f"WORKING NODES: {len(working)} / {len(nodes)}"
+          )
+          print("=" * 70)
+
+          # --------------------------------------------------
+          # IMPORTANT:
+          #
+          # If ZERO nodes work:
+          #   - DO NOT overwrite working_servers.json
+          #   - Keep the last known-good list
+          #   - Fail the GitHub Action
+          # --------------------------------------------------
+
+          if len(working) == 0:
+
+              print("")
+              print("NO WORKING NODES FOUND.")
+              print(
+                  "Keeping the previous working_servers.json."
+              )
+
+              try:
+                  TEMP_FILE.unlink()
+              except FileNotFoundError:
+                  pass
+
+              raise SystemExit(2)
+
+          # --------------------------------------------------
+          # Sort by latency
+          # --------------------------------------------------
+
+          working.sort(
+              key=lambda item: item["latency"]
+          )
+
+          # --------------------------------------------------
+          # Write temporary file first
+          # --------------------------------------------------
+
+          TEMP_FILE.write_text(
+              json.dumps(
+                  working,
+                  ensure_ascii=False,
+                  indent=2
+              ) + "\n",
+              encoding="utf-8"
+          )
+
+          # --------------------------------------------------
+          # Atomic replacement
+          #
+          # Only replace the old list when we have at least
+          # one confirmed working node.
+          # --------------------------------------------------
+
+          TEMP_FILE.replace(OLD_FILE)
+
+          print("")
+          print("Updated working_servers.json successfully.")
+          print("")
+          print(
+              json.dumps(
+                  working,
+                  ensure_ascii=False,
+                  indent=2
+              )
+          )
+
+          PY
+
+      - name: Show working nodes
+        shell: bash
+        run: |
+          echo "=============================================="
+          echo "Working LightVPN nodes"
+          echo "=============================================="
+
+          cat working_servers.json
+
+      - name: Commit working nodes
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add working_servers.json
+
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+
+          git commit -m "Update working LightVPN nodes"
+          git push
