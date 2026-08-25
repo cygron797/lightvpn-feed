@@ -1,31 +1,43 @@
 {
-  "updated_at": "2026-08-25T13:12:57Z",
+  "updated_at": "2026-08-25T14:13:09Z",
   "tested": 80,
-  "working": 4,
-  "failed": 76,
+  "working": 6,
+  "failed": 74,
   "servers": [
-    {
-      "protocol": "VMESS",
-      "url": "vmess://eyJhZGQiOiIxNzYuMTIwLjE3LjIxIiwiYWlkIjoiMCIsImlkIjoiNDI5NGQ5OTEtOTM2OS00NjhhLWFmMWQtNzk5ZThlMTJiZjc0IiwibmV0IjoidGNwIiwicG9ydCI6MTAxNSwicHMiOiJOTCDwn4ez8J+HsSB8IEBSYXlkaWthbHggfCBEM0YyREEiLCJzY3kiOiJhdXRvIiwic25pIjoiYXN0cmEuaXJhbmlhbmdhbWVyc2NsdWIuaXIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=",
-      "latency_ms": 741.8,
-      "quality": "usable"
-    },
     {
       "protocol": "TROJAN",
       "url": "trojan://MiTiVPN@140.248.185.253:443?path=/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-w@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN&security=tls&alpn=http/1.1&insecure=0&host=4x-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=1&sni=ssl.fastly.com#%E7%BE%8E%E5%9B%BD+V2CROSS.COM",
-      "latency_ms": 1038.0,
+      "latency_ms": 1079.4,
+      "quality": "slow"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://humanity@104.26.15.137:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 1205.8,
+      "quality": "slow"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://humanity@www.speedtest.org:443?security=tls&sni=www.ignitelimit.com&insecure=0&allowInsecure=0&type=ws&host=www.ignitelimit.com&path=%2Fassignment#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 1249.8,
+      "quality": "slow"
+    },
+    {
+      "protocol": "TROJAN",
+      "url": "trojan://humanity@104.26.14.137:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E7%BE%8E%E5%9B%BD+CloudFlare%E8%8A%82%E7%82%B9",
+      "latency_ms": 1252.1,
       "quality": "slow"
     },
     {
       "protocol": "VLESS",
       "url": "vless://851b2819-b359-40bc-ad61-a5d41027be2c@150.251.114.43:443?encryption=none&path=%2Fvless&security=none&type=ws#%E6%AF%94%E5%88%A9%E6%97%B6+V2CROSS.COM",
-      "latency_ms": 1123.3,
+      "latency_ms": 1485.0,
       "quality": "slow"
     },
     {
       "protocol": "TROJAN",
-      "url": "trojan://humanity@188.114.97.7:443?path=%2Fassignment&security=tls&insecure=0&ech=ip.gs%2Budp%3A%2F%2F8.8.8.8&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%E5%B7%B4%E8%A5%BF%E5%9C%A3%E4%BF%9D%E7%BD%97+CloudFlare%E8%8A%82%E7%82%B9",
-      "latency_ms": 1655.7,
+      "url": "trojan://humanity@2.144.21.112:40443?fp=chrome&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%E4%BC%8A%E6%9C%97+V2CROSS.COM",
+      "latency_ms": 3267.0,
       "quality": "very_slow"
     }
   ]
