@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: lightvpn-node-check
+  cancel-in-progress: false
+
 jobs:
   check-nodes:
     runs-on: ubuntu-latest
@@ -15,6 +19,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install sing-box
         shell: bash
@@ -42,10 +48,6 @@ jobs:
         run: |
           set -e
 
-          # --------------------------------------------------
-          # Prepare node list
-          # --------------------------------------------------
-
           printf '%s\n' "$NODE_LIST" > nodes.txt
 
           NODE_COUNT=$(grep -c '^vless://' nodes.txt || true)
@@ -62,14 +64,9 @@ jobs:
 
           mkdir -p results
 
-          # --------------------------------------------------
-          # Python checker
-          # --------------------------------------------------
-
           python3 - <<'PY'
           import json
           import os
-          import signal
           import subprocess
           import time
           import urllib.parse
@@ -119,6 +116,7 @@ jobs:
               print("=" * 70)
 
               proc = None
+              config_file = None
               proxy_port = 18080 + index
 
               try:
@@ -152,14 +150,8 @@ jobs:
                       ["chrome"]
                   )[0]
 
-                  # ------------------------------------------
-                  # Basic validation
-                  # ------------------------------------------
-
                   if not uuid or not server or not port:
-                      print(
-                          "FAIL: invalid UUID/server/port"
-                      )
+                      print("FAIL: invalid UUID/server/port")
                       continue
 
                   if transport not in (
@@ -173,23 +165,17 @@ jobs:
                       )
                       continue
 
-                  # ------------------------------------------
-                  # Build sing-box configuration
-                  # ------------------------------------------
-
                   outbound = {
                       "type": "vless",
                       "tag": "proxy-out",
-
                       "server": server,
                       "server_port": port,
                       "uuid": uuid
                   }
 
-                  # TLS
                   if security == "tls":
 
-                      tls_config = {
+                      outbound["tls"] = {
                           "enabled": True,
                           "server_name": sni,
                           "utls": {
@@ -198,9 +184,6 @@ jobs:
                           }
                       }
 
-                      outbound["tls"] = tls_config
-
-                  # Transport
                   if transport == "ws":
 
                       outbound["transport"] = {
@@ -233,8 +216,6 @@ jobs:
                           "service_name": service_name
                       }
 
-                  # tcp does not need a transport object
-
                   config = {
                       "log": {
                           "level": "error"
@@ -244,7 +225,6 @@ jobs:
                           {
                               "type": "mixed",
                               "tag": "proxy",
-
                               "listen": "127.0.0.1",
                               "listen_port": proxy_port
                           }
@@ -267,10 +247,6 @@ jobs:
                       encoding="utf-8"
                   )
 
-                  # ------------------------------------------
-                  # Validate sing-box configuration first
-                  # ------------------------------------------
-
                   check = subprocess.run(
                       [
                           "./sing-box",
@@ -292,10 +268,6 @@ jobs:
 
                       continue
 
-                  # ------------------------------------------
-                  # Start sing-box
-                  # ------------------------------------------
-
                   proc = subprocess.Popen(
                       [
                           "./sing-box",
@@ -307,7 +279,6 @@ jobs:
                       stderr=subprocess.DEVNULL
                   )
 
-                  # Give sing-box time to start
                   time.sleep(2)
 
                   if proc.poll() is not None:
@@ -316,40 +287,27 @@ jobs:
                       )
                       continue
 
-                  # ------------------------------------------
-                  # Test real HTTPS traffic through proxy
-                  # ------------------------------------------
-
                   start = time.time()
 
                   result = subprocess.run(
                       [
                           "curl",
-
                           "--proxy",
                           f"http://127.0.0.1:{proxy_port}",
-
                           "--noproxy",
                           "",
-
                           "--connect-timeout",
                           "10",
-
                           "--max-time",
                           "20",
-
                           "--silent",
                           "--show-error",
-
                           "--output",
                           "/dev/null",
-
                           "--write-out",
                           "%{http_code} %{time_total}",
-
                           "https://www.google.com/generate_204"
                       ],
-
                       capture_output=True,
                       text=True
                   )
@@ -357,12 +315,7 @@ jobs:
                   elapsed = time.time() - start
 
                   output = result.stdout.strip()
-
                   parts = output.split()
-
-                  # ------------------------------------------
-                  # Determine result
-                  # ------------------------------------------
 
                   if (
                       result.returncode == 0
@@ -414,14 +367,11 @@ jobs:
 
                   stop_process(proc)
 
-                  try:
-                      config_file.unlink()
-                  except Exception:
-                      pass
-
-          # --------------------------------------------------
-          # Results
-          # --------------------------------------------------
+                  if config_file is not None:
+                      try:
+                          config_file.unlink()
+                      except Exception:
+                          pass
 
           print("")
           print("=" * 70)
@@ -429,15 +379,6 @@ jobs:
               f"WORKING NODES: {len(working)} / {len(nodes)}"
           )
           print("=" * 70)
-
-          # --------------------------------------------------
-          # IMPORTANT:
-          #
-          # If ZERO nodes work:
-          #   - DO NOT overwrite working_servers.json
-          #   - Keep the last known-good list
-          #   - Fail the GitHub Action
-          # --------------------------------------------------
 
           if len(working) == 0:
 
@@ -454,17 +395,9 @@ jobs:
 
               raise SystemExit(2)
 
-          # --------------------------------------------------
-          # Sort by latency
-          # --------------------------------------------------
-
           working.sort(
               key=lambda item: item["latency"]
           )
-
-          # --------------------------------------------------
-          # Write temporary file first
-          # --------------------------------------------------
 
           TEMP_FILE.write_text(
               json.dumps(
@@ -475,18 +408,12 @@ jobs:
               encoding="utf-8"
           )
 
-          # --------------------------------------------------
-          # Atomic replacement
-          #
-          # Only replace the old list when we have at least
-          # one confirmed working node.
-          # --------------------------------------------------
-
           TEMP_FILE.replace(OLD_FILE)
 
           print("")
           print("Updated working_servers.json successfully.")
           print("")
+
           print(
               json.dumps(
                   working,
@@ -509,6 +436,8 @@ jobs:
       - name: Commit working nodes
         shell: bash
         run: |
+          set -e
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
@@ -520,4 +449,13 @@ jobs:
           fi
 
           git commit -m "Update working LightVPN nodes"
-          git push
+
+          echo "Syncing with remote main branch..."
+
+          git fetch origin main
+
+          git rebase origin/main
+
+          echo "Pushing updated working nodes..."
+
+          git push origin HEAD:main
