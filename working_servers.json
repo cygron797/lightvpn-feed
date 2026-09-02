@@ -1,107 +1,107 @@
 [
   {
-    "index": 26,
-    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.16.246.135:2053?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8926",
-    "latency": 91
-  },
-  {
-    "index": 22,
-    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@172.67.75.80:8443?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8922",
-    "latency": 96
-  },
-  {
-    "index": 8,
-    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.17.189.10:2096?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%898",
-    "latency": 100
-  },
-  {
-    "index": 5,
-    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.16.146.61:2083?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%895",
-    "latency": 105
-  },
-  {
-    "index": 24,
-    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.18.33.228:2096?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8924",
-    "latency": 105
-  },
-  {
-    "index": 3,
-    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.19.33.110:2053?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%893",
-    "latency": 112
-  },
-  {
-    "index": 4,
-    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.19.150.143:443?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%894",
-    "latency": 113
-  },
-  {
-    "index": 15,
-    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@172.66.0.60:8443?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8915",
-    "latency": 119
-  },
-  {
-    "index": 7,
-    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.16.153.174:2087?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%897",
-    "latency": 120
-  },
-  {
-    "index": 21,
-    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.19.32.47:443?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8921",
-    "latency": 127
-  },
-  {
-    "index": 10,
-    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@172.67.70.250:2087?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8910",
-    "latency": 128
-  },
-  {
-    "index": 13,
-    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.18.33.3:8443?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8913",
-    "latency": 131
-  },
-  {
-    "index": 19,
-    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@188.164.248.122:2096?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8919",
-    "latency": 134
-  },
-  {
-    "index": 16,
-    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.19.35.177:2083?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8916",
-    "latency": 141
-  },
-  {
-    "index": 1,
-    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@188.164.248.200:2087?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%891",
-    "latency": 147
-  },
-  {
     "index": 25,
     "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.17.116.174:2096?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8925",
-    "latency": 148
+    "latency": 133
   },
   {
-    "index": 30,
-    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.19.53.145:443?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8930",
-    "latency": 152
-  },
-  {
-    "index": 12,
-    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.17.187.169:2096?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8912",
-    "latency": 161
-  },
-  {
-    "index": 28,
-    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.17.216.251:2096?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8928",
-    "latency": 169
+    "index": 26,
+    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.16.246.135:2053?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8926",
+    "latency": 136
   },
   {
     "index": 29,
     "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.17.183.176:2087?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8929",
-    "latency": 247
+    "latency": 139
+  },
+  {
+    "index": 12,
+    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.17.187.169:2096?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8912",
+    "latency": 141
+  },
+  {
+    "index": 7,
+    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.16.153.174:2087?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%897",
+    "latency": 143
+  },
+  {
+    "index": 4,
+    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.19.150.143:443?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%894",
+    "latency": 145
+  },
+  {
+    "index": 19,
+    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@188.164.248.122:2096?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8919",
+    "latency": 147
+  },
+  {
+    "index": 8,
+    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.17.189.10:2096?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%898",
+    "latency": 152
+  },
+  {
+    "index": 28,
+    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.17.216.251:2096?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8928",
+    "latency": 154
+  },
+  {
+    "index": 13,
+    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.18.33.3:8443?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8913",
+    "latency": 157
+  },
+  {
+    "index": 16,
+    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.19.35.177:2083?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8916",
+    "latency": 158
+  },
+  {
+    "index": 15,
+    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@172.66.0.60:8443?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8915",
+    "latency": 159
+  },
+  {
+    "index": 5,
+    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.16.146.61:2083?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%895",
+    "latency": 163
+  },
+  {
+    "index": 24,
+    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.18.33.228:2096?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8924",
+    "latency": 174
   },
   {
     "index": 20,
     "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.19.53.219:2083?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8920",
-    "latency": 274
+    "latency": 179
+  },
+  {
+    "index": 30,
+    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.19.53.145:443?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8930",
+    "latency": 185
+  },
+  {
+    "index": 1,
+    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@188.164.248.200:2087?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%891",
+    "latency": 190
+  },
+  {
+    "index": 22,
+    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@172.67.75.80:8443?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8922",
+    "latency": 190
+  },
+  {
+    "index": 3,
+    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.19.33.110:2053?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%893",
+    "latency": 213
+  },
+  {
+    "index": 10,
+    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@172.67.70.250:2087?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8910",
+    "latency": 226
+  },
+  {
+    "index": 21,
+    "url": "vless://a1318fc0-7270-4dce-88f2-0a8564bd8c25@104.19.32.47:443?security=tls&type=ws&host=free.721907.xyz&fp=chrome&sni=free.721907.xyz&path=%2F&encryption=none#CF%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%8921",
+    "latency": 232
   }
 ]
